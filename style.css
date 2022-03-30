@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@200;300;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    height: 560px;
+    padding: 1.5em 1.5em 0.6em 1.5em;
+    width: 340px;
+    border-radius: 8px;
+}
+.imgcontainer{
+    height: 65%;
+}
+.imgcontainer img{
+    height: 83.5%px;
+    width: 100%;
+    border-radius: 8px;
+}
+.imgcontainer h2{
+    font-weight: 400;
+    color: white;
+    margin-top: 0.75em;
+}
+.text-container{
+    height: 23%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "para para"
+    "coin time";
+}
+.text-container img{
+    height: 50%;
+}
+
+.eth{
+    display: flex;
+    grid-area: coin; 
+}
+.time{
+    display: flex;
+    grid-area: time;
+    justify-content: flex-end;
+}
+.eth p,.time p{
+    margin-left: 0.5em;
+}
+.eth p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+.time p{
+    color: hsl(215, 51%, 70%);
+}
+.para{
+    grid-area: para;
+}
+.profile{
+    height: 12%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid  hsl(215, 32%, 27%);
+    
+}
+.profile img{
+    height: 60%;
+    border: 1px white solid;
+    border-radius: 50%;
+}
+.profile p{
+    margin-left: 1.5em;
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: white;
+}
